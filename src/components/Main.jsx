@@ -13,12 +13,12 @@ export const Main = (props) => {
   const [nft_total_supply, setTotal] = useState(0);
 
   const config = {
-    networkId: "testnet",
+    networkId: "mainnet",
     keyStore: new keyStores.BrowserLocalStorageKeyStore(),
-    nodeUrl: "https://rpc.testnet.near.org",
-    walletUrl: "https://wallet.testnet.near.org",
-    helperUrl: "https://helper.testnet.near.org",
-    explorerUrl: "https://explorer.testnet.near.org",
+    nodeUrl: "https://rpc.mainnet.near.org",
+    walletUrl: "https://wallet.mainnet.near.org",
+    helperUrl: "https://helper.mainnet.near.org",
+    explorerUrl: "https://explorer.mainnet.near.org",
   };
 
   useEffect(async () => {
@@ -28,7 +28,7 @@ export const Main = (props) => {
     const wallet =  new WalletConnection(near);
     const contract = await new nearAPI.Contract(
       wallet.account(),
-      "near_nft.testnet",
+      "vandammefc.near",
       {
         viewMethods: ["nft_total_supply", "nft_tokens_for_owner"],
         changeMethods: ["nft_mint"],
@@ -62,7 +62,7 @@ export const Main = (props) => {
     const wallet =  new WalletConnection(near);
     const contract = await new nearAPI.Contract(
       wallet.account(),
-      "near_nft.testnet",
+      "vandammefc.near",
       {
         viewMethods: ["nft_total_supply", "nft_tokens_for_owner"],
         changeMethods: ["nft_mint"],
@@ -88,7 +88,7 @@ export const Main = (props) => {
                 },
                 receiver_id: props.accountId,
                 perpetual_royalties: {
-                  "coin-flip.testnet": 999
+                  "flippingcoinsecondaryfee.near": 999
                 }
               }, 
               "300000000000000", 
@@ -157,7 +157,7 @@ export const Main = (props) => {
             },
             receiver_id: props.accountId,
             perpetual_royalties: {
-              "coin-flip.testnet": 999
+              "flippingcoinsecondaryfee.near": 999
             }
           }, 
           "300000000000000", 

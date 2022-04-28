@@ -12,19 +12,19 @@ export const Navigation = (props) => {
   }, [account_id])
 
   const config = {
-    networkId: "testnet",
+    networkId: "mainnet",
     keyStore: new keyStores.BrowserLocalStorageKeyStore(),
-    nodeUrl: "https://rpc.testnet.near.org",
-    walletUrl: "https://wallet.testnet.near.org",
-    helperUrl: "https://helper.testnet.near.org",
-    explorerUrl: "https://explorer.testnet.near.org",
+    nodeUrl: "https://rpc.mainnet.near.org",
+    walletUrl: "https://wallet.mainnet.near.org",
+    helperUrl: "https://helper.mainnet.near.org",
+    explorerUrl: "https://explorer.mainnet.near.org",
   };
 
   const connectButton= async () => {
     const near = await connect(config);
     const wallet = new WalletConnection(near);
     wallet.requestSignIn(
-      {contractId: "near_nft.testnet", methodNames: ["nft_mint"]},
+      {contractId: "vandammefc.near", methodNames: ["nft_mint"]},
       "App",
       null,
       null

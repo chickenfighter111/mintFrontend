@@ -19,19 +19,19 @@ const App = () => {
   const { connect, KeyPair, keyStores, WalletConnection} = nearAPI;
 
   const config = {
-    networkId: "testnet",
+    networkId: "mainnet",
     keyStore: new keyStores.BrowserLocalStorageKeyStore(),
-    nodeUrl: "https://rpc.testnet.near.org",
-    walletUrl: "https://wallet.testnet.near.org",
-    helperUrl: "https://helper.testnet.near.org",
-    explorerUrl: "https://explorer.testnet.near.org",
+    nodeUrl: "https://rpc.mainnet.near.org",
+    walletUrl: "https://wallet.mainnet.near.org",
+    helperUrl: "https://helper.mainnet.near.org",
+    explorerUrl: "https://explorer.mainnet.near.org",
   };
   useEffect(async () => {
     const near = await connect(config);
     const wallet =  new WalletConnection(near);
     const contract = await new nearAPI.Contract(
       wallet.account(),
-      "near_nft.testnet",
+      "vandammefc.near",
       {
         viewMethods: ["nft_total_supply", "nft_tokens_for_owner"],
         changeMethods: ["nft_mint"],

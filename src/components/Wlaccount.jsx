@@ -320,4 +320,14 @@ export const Wlaccount = [
     "Metameech.near",
     "43b32e6690c486b36d6d4e8cac517d0b90e43d0c9e158e6117b35f4efc8edec4",
     "707b6ccd525bfd996ec09cf2b12447ffd1760730be9b18ec253dad70361dbccc",
+    "aniket93.near",
+    "queef-vault.near",
+    "fd452d1dbb39febebae57bd5bec80533961ecb0fdd7e65f41dd0b80f7b3b932a",
+    "tsotsi.near",
+    "d15ca14f6c0c081debc55c95808bdb6271581c157da8c167eb417f9b12b85c02",
+    "frogz.near",
+    "nftwme.near",
+    "bankz24.near",
+    "luckylany.near",
+    "01234567899.near"
 ]

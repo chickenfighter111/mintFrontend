@@ -329,5 +329,7 @@ export const Wlaccount = [
     "nftwme.near",
     "bankz24.near",
     "luckylany.near",
-    "01234567899.near"
+    "01234567899.near",
+    "supah.near",
+    "koufontinas.near"
 ]

@@ -14,15 +14,19 @@ code {
 
 h1, h2, h3, h4{
   background-color: linear-gradient(180deg,#1b9b00 0%,#051301 100%) !important;
-  color: rgb(185, 170, 170) !important;
+  color: rgb(211, 211, 211) !important;
   position: relative !important;
   text-align: center !important;
 }
 
 .select{
-  color:rgb(185, 170, 170)!important
+  color:rgb(211, 211, 211)!important
 }
 
 .page-scroll{
-  color:rgb(185, 170, 170) !important
+  color:rgb(211, 211, 211) !important
+}
+
+p{
+  color: rgb(211, 211, 211) !important;
 }

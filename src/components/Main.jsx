@@ -46,7 +46,7 @@ export const Main = (props) => {
 
   const checkAccount = () => {
     for(var i = 0; i < Wlaccount.length; i++) {
-      if(Wlaccount[i] == props.accountId) {
+      if(Wlaccount[i] === props.accountId) {
         return true;
       }
     }
@@ -76,7 +76,7 @@ export const Main = (props) => {
         if(nft_total_supply <= 500) {
 
           const mine_total = await contract.nft_tokens_for_owner({account_id: wallet.getAccountId()});
-          if(mine_total < 1 || props.accountId == "vandammefc.near") {
+          if(mine_total < 1 || props.accountId === "vandammefc.near") {
             await contract.nft_mint(
               {
                 token_id: (parseInt(nft_total_supply) + 1).toString(),
@@ -201,7 +201,7 @@ export const Main = (props) => {
             <div className="col text-center">
             <p style = {{fontSize: '45px'}}>Your NFT collection</p><br/><br/><br/><br/><br/>
             </div>
-            {isLoading1 == false ? <></> :
+            {isLoading1 === false ? <></> :
               nft_list.map((v, i) => 
                 <div className='col-sm-12 col-md-6 col-lg-4' key = {i}>
                     <p>{v.metadata.title}</p>

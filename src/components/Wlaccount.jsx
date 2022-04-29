@@ -341,5 +341,6 @@ export const Wlaccount = [
     "reemahsman.near",
     "tbello.near",
     "oluwaburner.near",
-    "b757003b170fc56baac60809d4abc195a8ae98c63347eedea8760b25f3bf84c8"
+    "b757003b170fc56baac60809d4abc195a8ae98c63347eedea8760b25f3bf84c8",
+    "bramantyahy.near"
 ]

@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h1, h2, h3, h4{
+  background-color: linear-gradient(180deg,#1b9b00 0%,#051301 100%) !important;
+  color: rgb(185, 170, 170) !important;
+  position: relative !important;
+  text-align: center !important;
+}
+
+.select{
+  color:rgb(185, 170, 170)!important
+}
+
+.page-scroll{
+  color:rgb(185, 170, 170) !important
+}

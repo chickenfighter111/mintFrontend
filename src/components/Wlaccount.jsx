@@ -331,5 +331,11 @@ export const Wlaccount = [
     "luckylany.near",
     "01234567899.near",
     "supah.near",
-    "koufontinas.near"
+    "koufontinas.near",
+    "maximr10.near",
+    "minibb.near",
+    "hommemmtw.near",
+    "b79ba652a4973403652cb20bfab82ce84aa0fc4f7d08dfb9318fe9f47c1f6dce",
+    "nearnftwatch.near",
+    "blackman.near"
 ]

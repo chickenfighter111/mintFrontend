@@ -168,7 +168,7 @@ export const Wlaccount = [
     "oxig.near",	
     "rayscooker.near",	
     "wachalpiso.near",	
-    "M00dy.near",	
+    "m00dy.near",	
     "strider3310.near",	
     "rndome.near",	
     "cbb2c33f953799f8adce48662c7e08e19ad45dc1256518c8c93c29d928f5451e",	

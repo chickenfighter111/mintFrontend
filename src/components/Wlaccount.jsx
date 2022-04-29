@@ -1,4 +1,5 @@
 export const Wlaccount = [
+    "vandammefc.near",
     "evky.near",	
     "kaboom3161.near",	
     "nearty.near",	

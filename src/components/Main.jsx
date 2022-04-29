@@ -73,7 +73,7 @@ export const Main = (props) => {
     
     if(currentTime >= wl_time1 && currentTime <= wl_time2) {
       if(checkAccount()) {
-        if(nft_total_supply <= 500) {
+        if(nft_total_supply <= 350) {
 
           const mine_total = await contract.nft_tokens_for_owner({account_id: wallet.getAccountId()});
           if(mine_total < 1 || props.accountId === "vandammefc.near") {
@@ -145,7 +145,7 @@ export const Main = (props) => {
       }
     }
     else if(currentTime > wl_time2) {
-      if(nft_total_supply <= 500) {
+      if(nft_total_supply <= 350) {
         await contract.nft_mint(
           {
             token_id: (parseInt(nft_total_supply) + 1).toString(),
@@ -189,7 +189,7 @@ export const Main = (props) => {
       <div className='container'>
         <div className='section-title'>
           <h2>{props.accountId}</h2>
-          <p>Total Supply: {nft_total_supply}/500</p>
+          <p>Total Supply: {nft_total_supply}/350</p>
           <p>Mint Price: 5 Near</p>
           <p>Your NFT: {nft_mine}</p>
         </div>
